@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandas</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        .hero {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Main Content */
+        main {
+            padding: 2rem;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        article h2 {
+            font-size: 1.8rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        article p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Pandas</h1>
+            <p>A powerful data manipulation and analysis library.</p>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <article>
+                <h2>Overview</h2>
+                <p>Pandas is an open-source data analysis and manipulation library for Python. It provides data structures like DataFrame and Series to work with structured data. Pandas is widely used for its efficient handling of large datasets and its ability to perform complex data analysis tasks easily.</p>
+                <p>Developed by Wes McKinney in 2008, Pandas has become one of the most popular libraries in the data science community. It is built on top of Numpy and provides additional functionality for data manipulation and analysis. Pandas is often used in conjunction with other libraries like Matplotlib and Seaborn for data visualization.</p>
+                <p>The primary data structures in Pandas are the DataFrame and Series. The DataFrame is a two-dimensional, size-mutable, and potentially heterogeneous tabular data structure with labeled axes (rows and columns). The Series is a one-dimensional labeled array capable of holding any data type. Both structures are designed to be intuitive and flexible for data analysis.</p>
+                <p>Pandas provides a variety of methods for data manipulation, including data alignment, missing data handling, merging, reshaping, and data aggregation. These features make it an invaluable tool for data analysis, data cleaning, and data preprocessing tasks.</p>
+            </article>
+            <article>
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>DataFrame:</strong> A 2-dimensional labeled data structure with columns of potentially different types. It is similar to a database table or a spreadsheet, and provides powerful methods for data manipulation.</li>
+                    <li><strong>Series:</strong> A one-dimensional labeled array capable of holding any data type. It is like a single column of a DataFrame and provides methods for data manipulation and analysis.</li>
+                    <li><strong>Data Manipulation:</strong> Functions for reshaping, merging, and aggregating data. Pandas provides methods for pivoting, stacking, and unstacking data, as well as grouping and aggregating data based on different criteria.</li>
+                    <li><strong>Time Series:</strong> Pandas has powerful tools for working with time series data, including date range generation, frequency conversion, and resampling.</li>
+                    <li><strong>Data Input/Output:</strong> Functions for reading and writing data from various file formats such as CSV, Excel, SQL, and HDF5.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Basic Usage</h2>
+                <p>Here’s a simple example of creating a DataFrame with Pandas:</p>
+                <pre><code>
+import pandas as pd
+
+# Create a DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [25, 30, 35]}
+df = pd.DataFrame(data)
+
+# Print the DataFrame
+print(df)
+
+# Access a column
+print(df['Name'])
+
+# Add a new column
+df['City'] = ['New York', 'Los Angeles', 'Chicago']
+
+# Print the updated DataFrame
+print(df)
+
+# Filter rows
+filtered_df = df[df['Age'] > 30]
+print(filtered_df)
+                </code></pre>
+            </article>
+            <article>
+                <h2>Advanced Topics</h2>
+                <p>Pandas offers several advanced features for data manipulation and analysis:</p>
+                <ul>
+                    <li><strong>MultiIndex:</strong> Supports hierarchical indexing, allowing for more complex data organization and manipulation.</li>
+                    <li><strong>GroupBy:</strong> Allows for grouping data based on specific criteria and applying aggregate functions to the groups.</li>
+                    <li><strong>Window Functions:</strong> Provides rolling, expanding, and exponentially weighted window functions for time series and other sequential data.</li>
+                    <li><strong>Data Alignment:</strong> Automatically aligns data when performing operations between different DataFrames or Series.</li>
+                    <li><strong>Pivot Tables:</strong> Enables creating pivot tables to summarize and analyze data.</li>
+                </ul>
+                <p>These features, combined with Pandas' flexibility and performance, make it a powerful tool for data analysis and manipulation tasks. The library's extensive documentation and active community further enhance its usability and effectiveness in various applications.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Python Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
